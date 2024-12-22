@@ -4,3 +4,34 @@ plugins:
   - blog
 theme:
   name: material
+  features:
+    - header.autohide
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: amber
+      accent: teal
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+      primary: black
+      accent: teal
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/abughalib
+
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/abughalib/
