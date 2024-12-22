@@ -1,0 +1,6 @@
+site_name: My Blogs
+plugins:
+  - search
+  - blog
+theme:
+  name: material
