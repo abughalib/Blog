@@ -1,11 +1,27 @@
 site_name: My Blogs
 plugins:
   - search
-  - blog
+  - glightbox
+  - blog:
+      pagination_per_page: 5
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.smartsymbols
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.tabbed:
+      alternate_style: true
 theme:
   name: material
   features:
     - header.autohide
+    - content.code.copy
+    - content.code.highlight
+    - content.code.select
+    - navigation.indexes
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -35,3 +51,7 @@ extra:
 
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/abughalib/
+nav:
+  - Home: index.md
+  - Blog:
+      - OpenVPN Behind CGNAT: blog/posts/openvpn_behind_cgnat.md
